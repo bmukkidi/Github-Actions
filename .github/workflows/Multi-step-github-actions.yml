@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: Step 1 - Log the pre build disk space
-        run df
+        
         
       - name: Step 2 - checkout the main github branch
         uses: actions/checkout@v2
@@ -39,6 +39,6 @@ jobs:
           ant --version
           gradle --version
       - name: Step 8 - Log the post build disk space
-        run df
+        echo df
      
         
