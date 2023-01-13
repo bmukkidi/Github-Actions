@@ -2,7 +2,7 @@ name: getting Started
 
 on:
   push:
-    branches [ main ]
+    branches: [ main ]
 jobs:
   build-on-windows:
     runs-on: windows-latest
@@ -48,8 +48,3 @@ jobs:
         
       - name: Step 5 - List ubuntu env variables
         run: env
-        
-        
-        
-        
-      
