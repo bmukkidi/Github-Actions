@@ -29,8 +29,8 @@ jobs:
           
       - name: Step 6 - run your Selenium scripts
         run: |
-        echo Selenium jar path
-        echo $SELENIUM_JAR_PATH
+          echo Selenium jar path
+          echo $SELENIUM_JAR_PATH
         
       - name: Log buid tool version
         run: | 
