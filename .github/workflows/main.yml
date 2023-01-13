@@ -41,3 +41,18 @@ jobs:
           mvn -version
           gradle -version
           ant -version
+          echo
+          echi Whre is the Android SDK root?
+          echo $ANDROID_SDK_ROOT
+          echo
+          echo Where are the Selenium jars?
+          echo $SELENIUM_JAR-PATH
+          echo
+          echo Who is running this script?
+          whoami
+          echo
+          echo How is the disk lied out? 
+          df
+          echo 
+          echo What envornment variable are availabele?
+          env
