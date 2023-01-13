@@ -1,0 +1,44 @@
+name: Getting started
+
+on:
+  push:
+    branch: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Step 1 - Log the pre build disk space
+        run df
+        
+      - name: Step 2 - checkout the main github branch
+        uses: actions/checkout@v2
+        
+      - name: Step 3 - Set up jdk 1.8
+        uses: actions/setup-java@v2
+          with:
+            java-version:1.8
+            
+      - name: Step 4 - Build your Jakarta web app with Maven
+        run: echo mvn -B package --file pom.xml
+        
+      - name: Step 5 -Build the native android App
+        run: |
+          echo here is the android SDK
+          echo $ANDROID_SDK_ROOT
+          
+      - name: Step 6 - run your Selenium scripts
+        run: |
+        echo Selenium jar path
+        echo $SELENIUM_JAR_PATH
+        
+      - name: Log buid tool version
+        run: | 
+          git --version
+          mvn --version
+          ant --version
+          gradle --version
+      - name: Step 8 - Log the post build disk space
+        run df
+     
+        
