@@ -42,7 +42,7 @@ jobs:
           gradle -version
           ant -version
           echo
-          echi Whre is the Android SDK root?
+          echo Whre is the Android SDK root?
           echo $ANDROID_SDK_ROOT
           echo
           echo Where are the Selenium jars?
